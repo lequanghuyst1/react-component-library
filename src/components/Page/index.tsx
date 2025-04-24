@@ -1,12 +1,13 @@
 import React from "react";
+import { Container } from "@mui/material";
 import { PageComponentProps } from "./types";
 
 const PageComponent: React.FC<PageComponentProps> = ({ title, children }) => {
   return (
-    <div>
+    <Container>
       <h1>{title}</h1>
       <>{children}</>
-    </div>
+    </Container>
   );
 };
 
